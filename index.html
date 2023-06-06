@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
+    <title>Encriptador de Texto</title>
+</head>
+<body>
+    <header>
+        <img src="/img/logo.svg" alt="Logo encriptador" class="logo">
+    </header>
+    <main >
+        <section>
+            <textarea 
+            class="areaUno" 
+            placeholder="Ingrese el texto" 
+            onkeyup="this.value=soloLetra(this.value)"
+            ></textarea>
+            <div>
+                
+                <h6 class="hInformacion">
+                    <img src="./img/bon.png">&nbspSolo letras minúsculas y sin acentos.
+                </h6>
+            </div>
+            <div class="btn">
+                <button class="btnEncriptar" onclick="btnEncripta();">
+                    Encriptar
+                </button>
+                <button class="btnDesencriptar" onclick="btnDesencriptar();">
+                    Desencriptar
+                </button>
+            </div>
+        </section>
+        <section>
+            <div>
+                <img src="./img/seccion2.png" class="imgareaDos" id="imagen">
+            </div>
+            <textarea class="areaDos"  id="areaCopiada" readonly></textarea>
+            <h5 class="textoUno" id="textoUno">Ningun mensaje fue encontrado</h5>
+            <h5 class="textoDos" id="textoDos">Ingrese el texto que desees encriptar o desencriptar</h5>
+            <div>
+                <button class="btnCopiar" id="btnCopiar" onclick="copiar();">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h5 class="autor">Desarrollado por Cristhian Desposorio / Perú - Lima / ONE G5</h5>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>

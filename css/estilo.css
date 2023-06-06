@@ -1,0 +1,142 @@
+*{
+    background: #f3f5fc;  
+    font-family: 'Inter';
+    font-size: 32px;
+}
+
+.logo{
+    padding-top: 2%;
+    margin-left: 1%;
+    width: 8%;
+}
+
+main{
+    display: flex;
+    margin-bottom: 1%;
+    margin-left: 8%;
+}
+
+.areaUno{
+    border: none;
+    color: #0a3871;
+    margin-top: 4vh;
+    width: 50vw;
+    height: 40vh;
+    text-transform: lowercase;
+    resize: none;
+    
+}
+
+::placeholder{
+    color: #0a3871;
+}
+
+.areaUno:focus{
+    outline: none;
+}
+
+.areaDos{
+    background: white;
+    border: none;
+    border-radius: 24px;
+    color: #0a3871;
+    margin-left: 10vw;
+    margin-top: -10vh;
+    padding-left: 5vw;
+    width: 20vw;
+    height: 90vh;
+    position: fixed;
+    resize: none;
+}
+
+.areaDos:focus{
+    outline: none;
+}
+
+.btn{
+    display: flex;
+}
+
+.btnEncriptar{
+    background-color: #0a3871;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 9vh;
+    width: 21vw;
+}
+
+.btnDesencriptar{
+    background-color: #D8DFE8;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    color: #0a3871;
+    cursor: pointer;
+    height: 9vh;
+    margin-left: 30px;
+    width: 21vw;
+}
+
+.btnCopiar{
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    color: #0a3871;
+    cursor: pointer;
+    height: 9vh;
+    margin-left: 12VW;
+    margin-top: 65VH;
+    position: absolute;
+    width: 21vw;
+    visibility: hidden;
+}
+
+.btnEncriptar:hover,.btnDesencriptar:hover,.btnCopiar:hover{
+    background-color: crimson;
+}
+
+.hInformacion{
+    color: #495057;
+    font-size: 20px;
+    margin-top: 13vh;
+    display: flex;
+}
+
+.autor{
+    color: #495057;
+    font-size: 14px;
+    margin-left: 16vh;
+    display: flex;
+}
+
+.imgareaDos{
+    position: absolute;
+    background-color: white;
+    width: 15vw;
+    z-index: 1;
+    margin-left: 15vw;
+}
+
+.textoUno{
+    position: absolute;
+    background-color: white;
+    width: 17vw;
+    z-index: 1;
+    margin-left: 14vw;
+    top: 40vh;
+    font-size: 3vh;
+    text-align: center;
+    font-family: 'Inter Tight', sans-serif;
+}
+
+.textoDos{
+    position: absolute;
+    background-color: white;
+    font-size: 20px;
+    width: 15vw;
+    z-index: 1;
+    margin-left: 12vw;
+    top: 50vh;
+    width: 21vw;
+    text-align: center;
+}
