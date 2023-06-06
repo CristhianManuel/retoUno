@@ -44,8 +44,15 @@ function btnEncripta()
 }
 
 function btnDesencriptar(){
-    const texo = desencriptar(textArea.value);
-    textAreaMensaje.value = texo;
+    if(textArea.value == "")
+    {
+        alert("Ingrese texto!!");
+        textArea.focus();
+    }
+    else{
+        const texo = desencriptar(textArea.value);
+        textAreaMensaje.value = texo;
+    }
 }
 
 function encriptar(stringEncripta){
